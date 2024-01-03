@@ -1,0 +1,57 @@
+.loginSignup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../assets/images/backgroundpicture-modified.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-family: 'Merriweather', serif;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  */
+}
+
+body::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 70%); /* 使用渐变创建阴影线 */
+    margin-top: 10px; /* 调整线条与页面内容之间的间距 */
+}
+
+
+
+.slogan {
+    font-size: 3.5em;
+    margin-top: -80px;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    /* Add text shadow */
+    /* background-color: rgba(255, 255, 255, 0.1); Add a light gray-white background */
+    padding: 10px; /* Add inner margin */
+}
+
+.buttons {
+    display: flex;
+    padding: 20px 40px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 50px;
+}
+
+#signupBtn:hover{
+    background-color: #780000;
+}

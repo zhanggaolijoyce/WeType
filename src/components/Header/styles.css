@@ -1,0 +1,163 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow:  0px 2px 12px rgba(0,0,0,0.3); 
+    height: 120px !important;
+    font-size: 24px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体粗细 */
+    z-index: 2000;
+
+}
+
+.logo-section h1 {
+    margin-left: 35px;  
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.btn.dropdown-toggle {
+    background-color: transparent;
+    color: black;
+    border-color: #333;
+}
+
+.btn.dropdown-toggle:hover {
+    background-color: #eee;
+    color: gray;
+}
+
+#user-dropdown-basic::before {
+    width: 2px;
+    height: 2px;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+.dropdown-item {
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+.dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #dcdada;
+}
+
+.btn.userbutton {
+    border: none;
+}
+
+.btn.userbutton:hover {
+    background-color: transparent !important;
+    color: black;
+    color: #c5b0d8;
+    text-decoration: underline;
+}
+
+.btn.userbutton:focus, 
+.btn.userbutton:active {
+    background-color: #eee;
+}
+
+.btn.userbutton:focus, 
+.btn.userbutton:active {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.controls .dropdown:not(:last-child) {
+    margin-right: 50px; 
+}
+
+.custom-dropdown {
+    margin-right: 20px;
+}
+
+
+.website-name {
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+}
+
+/* Button color and border color when the theme is blueGradient */
+[data-theme='blueGradient'] .large-button, 
+[data-theme='blueGradient'] .buttons a {
+    background-color: #bde0fe;
+    border-color: #78c0e0;
+    color: #0077b6;
+}
+
+
+[data-theme='blueGradient'] .theme-dropdown .dropdown-toggle {
+    background-color: #bde0fe;
+    border-color: #78c0e0;
+    color: #0077b6;
+}
+
+[data-theme='blueGradient'] .themebutton {
+    color: #0077b6;
+}
+
+[data-theme='blueGradient'] .themebutton:hover {
+    text-decoration-color: #0077b6;
+}
+
+[data-theme='blueGradient'] .userbutton {
+    color: #0077b6;
+}
+
+[data-theme='blueGradient'] .userbutton:hover {
+    text-decoration-color: #0077b6;
+}
+
+
+
+
+/* Button color and border color when the theme is customPinkGradient */
+[data-theme='PinkGradient'] .large-button, 
+[data-theme='PinkGradient'] .buttons a {
+    background-color: #FFE4D6;
+    border-color: #FACBEA;
+    color: #D988B9;
+}
+
+
+[data-theme='PinkGradient'] .theme-dropdown .dropdown-toggle {
+    background-color: #FFE4D6;
+    border-color: #FACBEA;
+    color: #D988B9;
+}
+
+[data-theme='PinkGradient'] .themebutton {
+    color: #D988B9;
+}
+
+[data-theme='PinkGradient'] .themebutton:hover {
+    text-decoration-color: #D988B9;
+}
+
+[data-theme='PinkGradient'] .userbutton {
+    color: #D988B9;
+}
+
+[data-theme='PinkGradient'] .userbutton:hover {
+    text-decoration-color: #D988B9;
+}

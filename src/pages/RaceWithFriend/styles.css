@@ -1,0 +1,114 @@
+.practice-container header {    /* The header of practice solo and race with friend will move up. */
+    margin-top: -45px; 
+    font-weight: bold;
+}
+
+.practice-title {
+    font-size: 20px;
+    margin-top: 7px;
+    color: #ffffff;
+    font-weight: bold; /* 加粗标题 */
+}
+
+
+.race-container {
+    font-family: Arial, sans-serif;
+    padding: 100px 150px;
+}
+
+header {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 10px 0;  
+    padding-left: 200px;  
+    position: fixed;
+    top: 170px;
+    left: 0;  
+    width: 100%;
+    box-sizing: border-box;  /* Ensure that padding and border do not increase the total width of the element. */
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    z-index: 1000; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.timer-container {     /* race progress */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 100px 50px 50px;
+    margin-left: 300px;
+    margin-top: -190px;  /* Move it up. */
+}
+
+.race-progress {
+    width: 500px;
+    height: 100px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.progress-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;  /* Make the child elements evenly distributed in the horizontal direction. */
+}
+
+.user-name {
+    flex: 1;
+    border-right: 1px solid #dcdcdc;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.car-icon {
+    width: 50px;
+    height: 40px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-left: auto; 
+}
+
+.friend-car {
+    background-image: url('../../assets/images/yellow_car.png');
+}
+
+.my-car {
+    background-image: url('../../assets/images/pink_car.png');
+}
+
+.text-sample {
+    margin: 20px 0;
+    font-size: 18px;
+    border: 1px solid #dcdcdc; /* Gray border */
+    padding: 10px; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    width: calc(100% - 40px); /* 考虑到padding和border */
+    box-sizing: border-box; /* 确保padding和border不增加元素的总宽度 */
+    font-size: 15pt;
+}
+
+.textarea-wrapper {
+    display: flex; /* 将容器设为Flex容器 */
+    flex-direction: column; /* 垂直方向的Flex容器 */
+    align-items: center; /* 在垂直方向上居中对齐 */
+    justify-content: center; /* 在水平方向上居中对齐 */
+    width: calc(100% - 40px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 添加外部阴影 */
+    padding: 10px;
+    background-color: #7da4ba;
+    box-sizing: border-box;
+}

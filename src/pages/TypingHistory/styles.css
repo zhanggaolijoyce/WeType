@@ -1,0 +1,47 @@
+.overall-container {
+  margin-left: 200px;
+  box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.1);
+  max-height: 720px;
+}
+
+.back-header {
+  background-color: transparent;
+  margin-left: 35px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.history-container {
+  padding: 20px;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.react-calendar-heatmap {
+  width: 500px;
+  max-height: 300px;
+  margin: 0 auto; /* Center the heatmap */
+  padding: 20px 20px;
+}
+
+.react-calendar-heatmap .react-calendar-heatmap-day {
+  width: 8px;
+  height: 8px;
+}
+
+.react-calendar-heatmap rect {
+  width: 5px;
+  height: 5px;
+}
+
+.good-job {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 36px;
+}
+
+.history-text {
+  font-size: 18px;
+  color: #2e2c2f;
+}
+

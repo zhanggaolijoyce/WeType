@@ -1,0 +1,64 @@
+/* Setting.css */
+.avatar-selection {
+    display: flex;
+    align-items: center; /* 确保项目在交叉轴上居中对齐 */
+    padding: 20px;
+  }
+  
+  .selectable-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease; /* 添加过渡效果 */
+  }
+  
+  .selectable-avatar:hover,
+  .selected-avatar {
+    border-color: #007bff; /* 蓝色边框 */
+  }
+  
+  .setting-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .setting-section label {
+    margin-bottom: 5px;
+  }
+  
+  .styled-select {
+    padding: 10px; /* 调整内边距 */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px; /* 设置固定宽度或者百分比 */
+    margin-bottom: 20px; /* 添加一些底部边距 */
+  }
+  
+  .save-settings-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* 按钮的背景颜色 */
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .save-settings-button:hover {
+    background-color: #45a049; /* 按钮悬浮时的背景颜色 */
+  }
+  
+  /* 添加媒体查询以改善响应式设计 */
+  @media (max-width: 768px) {
+    .styled-select {
+      width: 80%; /* 在较小屏幕上增加下拉菜单的宽度 */
+    }
+  }
+  
+  
+  

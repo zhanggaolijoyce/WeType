@@ -1,0 +1,169 @@
+.practice-container {
+    font-family: Arial, sans-serif;
+    padding: 100px 150px;
+    position: relative;
+    height: 695px;
+    top:20px;  
+    font-weight: bold;
+}
+
+.practice-container::before, 
+.practice-container::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 1px;
+    background: transparent;
+}
+
+.practice-container::before {
+    left: 200px;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.2);
+}
+
+.practice-container::after {
+    right: 200px !important;
+    box-shadow: -2px 0 4px rgba(0,0,0,0.2);
+}
+
+header {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 10px 0;
+    padding-left: 200px;
+    position: fixed;  /*保持固定位置*/
+    /* top: 170px; */
+    top: 0; /* 将此值设置为0，使header固定在页面顶部 */
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    z-index: 1000; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    width: 1148px;
+}
+
+.MuiLinearProgress-root {
+    background-color: white; /* Set the background of the progress bar to white */
+    /* 可以添加其他样式，比如边框、阴影等 */
+}
+
+
+.timer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.practice-timer-container {
+    /* PracticeYourself 的 timer-container 的特定样式 */
+    margin-top: -150px !important;
+    margin-bottom: 30px;
+}
+
+.text-sample, .textarea-wrapper {
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+    width: calc(100% - 120px) !important;
+    box-sizing: border-box;
+    /* position: relative !important;
+    margin-top: -30px !important; */
+}
+
+.text-sample {
+    display: flex;         
+    flex-direction: column; /* Vertical layout */
+    justify-content: space-between; /* Make the content evenly distributed in the vertical direction. */
+    margin: 20px 0;
+    font-size: 20px;
+    border: 1px solid #dcdcdc;
+    padding: 20px; /* Increase the internal filling to increase the height. */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    box-sizing: border-box;
+    position: relative !important;
+    margin-top: -50px !important; 
+    /* height: 300px; */
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    overflow-y: auto; /* Add a vertical scroll bar */
+}
+
+/* Add a new style to add a gray horizontal line to each line of text. */
+.text-sample div {
+    padding: 5px 0; /* The inner margin removes the content from the horizontal line. */
+    border-bottom: 1px solid #dcdcdc; /* Add the bottom border as a horizontal line for each div. */
+}
+
+.text-sample div:last-child {
+    border-bottom: none; /* Remove the bottom border of the last div */
+}
+
+
+.textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: transparent !important; /* Make the background transparent */
+    box-sizing: border-box;
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px !important;
+    border: 1px solid #161515;
+    border-radius: 5px;
+    border: none;           /* Remove the border */
+    outline: none;          /* Remove the contour when focusing */
+    resize: vertical;       /* Vertical resize is allowed, but horizontal resize is not allowed. */
+    font-family: "Courier New", Courier, monospace !important;
+}
+
+.practice-title {
+    font-size: 20px;
+    margin-top: 7px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.time-label {
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.restart-button {
+    position: relative;
+    right: 200px;
+}
+
+/* .arrow-left-icon .MuiButton-startIcon {
+    margin-left: 50px ;
+} */
+

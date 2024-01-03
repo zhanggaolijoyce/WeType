@@ -1,0 +1,34 @@
+.practice-container {
+    /* 其他样式保持不变 */
+    margin-top: -20px; /* 向上移动内容 */
+  }
+  
+  .friend-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 项目从左侧开始对齐 */
+    padding-left: 50px; /* 头像左边的留白 */
+    gap: 25px; /* 增加好友之间的垂直间隔 */
+  }
+  
+  .friend-item {
+    display: flex;
+    align-items: center;
+    width: fit-content; /* 宽度适应内容 */
+    gap: 70px; /* 增加头像和名字之间的间隔 */
+  }
+  
+  .friend-avatar {
+    width: 80px; /* 调整头像尺寸 */
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px; /* 增加头像右侧的留白 */
+  }
+  
+  .friend-name {
+    font-size: 20px; /* 调整字体尺寸 */
+    font-weight: bold;
+    margin-right: 50px; /* 增加名字右侧的留白 */
+  }
+  
+  

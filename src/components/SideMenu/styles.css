@@ -1,0 +1,63 @@
+.sidemenu {
+    width: 280px !important;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 修改为center使子元素水平居中 */
+    gap: 20px;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightgray;
+    padding: 30px;
+    background-image: url('../../assets/images/avartar.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;  /* 确保列表项占满sidemenu的宽度 */
+}
+
+li {
+    cursor: pointer;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.3s;
+    font-size: 30px;  /* 增加字体大小 */
+    margin-top: 20px;
+    text-align: center;  /* 文字居中 */
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.icon-padding {
+    margin-left: 20px;  /* 根据需要调整值 */
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.typing-gif-container {
+    width: 100%; /* 确保宽度与侧边栏相同 */
+    display: flex;
+    justify-content: center; /* 图片水平居中 */
+    margin-top: 110px; /* 与上方元素的间距 */
+}
+  
+
+.typing-gif-container img {
+    max-width: 100%; /* 确保图片不会超出容器宽度 */
+    height: auto; /* 保持图片的原始比例 */
+}
+  

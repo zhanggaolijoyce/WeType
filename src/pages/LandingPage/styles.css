@@ -1,0 +1,92 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;             
+    margin-top: 30px;
+}
+
+  
+  .content {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
+  }
+  
+  .practice-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .practice-info .icon {
+    margin-right: 8px; /* Adjust the horizontal spacing between icons and text */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row; /* Arrange the buttons vertically. */
+    align-items: center; /* Horizontal center alignment button */
+    margin-top: 80px; 
+  }
+  
+  .buttons button {
+    margin-top: 8px; /* Adjust the vertical spacing between buttons */
+  }
+  
+  .large-button {
+    font-size: 18px; /* 设置按钮字体大小 */
+    padding: 12px 30px; /* 设置按钮内边距，调整按钮大小 */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+.copyright {
+    margin-top: 200px; /* 调整版权信息与按钮之间的垂直间距 */
+  }
+  
+
+
+/* 添加一个带圆润角的边框 */
+.large-button, .buttons a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #007bff; /* 边框样式和颜色 */
+  border-radius: 20px; /* 圆角半径 */
+  font-size: 18px;
+  margin-top: 8px;
+  transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+  border-width: 2px; /* 设置边框宽度 */
+  box-sizing: border-box; /* 让边框宽度包括在按钮的总宽度内 */
+  
+}
+
+.large-button:hover, .buttons a:hover {
+  background-color: #007bff; /* 鼠标悬停时的背景色 */
+  color: #fff; /* 鼠标悬停时的文本颜色 */
+}
+
+
+
+#slogan {
+  font-family: 'IBM Plex Serif', serif;
+  color: #ffffff;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.icon {
+  margin-top: 20px;
+}
+

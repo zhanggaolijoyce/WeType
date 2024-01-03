@@ -1,0 +1,38 @@
+#################### Service APIs ####################
+## Types and Inputs ##
+type User {
+  email: String
+  password: String
+  profile: UserProfile
+}
+
+type UserProfile {
+  name: String
+  avatar: Int
+  preferred_style: Int
+  history: History
+  total_practice_time: Int
+  total_practice_words: Int
+  friends: [String]
+}
+
+type History{
+  key: [String]
+  value: [Int]
+}
+
+## Queries ##
+type Query{
+  fetchUserInfo(email: String!): UserProfile
+  worldRanking: [User]
+}
+
+## Mutations ##
+type Mutation{
+  logIn(email: String!, password: String!): Int
+  signUp(email: String!, password: String!, name: String): Int
+  editProfile(email: String!, name: String, preferred_style: Int, avatar: Int): Int
+  deregister(email: String!, password: String!): Int
+  addRecord(email: String!, time: Int!, words: Int!): Int
+  addFriend(email: String!, password: String!, friend: String!): Int
+}

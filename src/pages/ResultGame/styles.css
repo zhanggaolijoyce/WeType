@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'ClassyFlowersRegular';
+    src: local('ClassyFlowersRegular'),
+         url('../../assets/fonts/ClassyFlowersRegular-mLyX2.ttf') format('truetype');
+  }
+  
+.winner-section {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.winner-image {
+    width: 100%; 
+    max-width: 300px; 
+    /* margin-top: 20px;  */
+    height: auto; /*Maintain the aspect ratio of the picture */
+    display: block; /* Let the picture be on a separate line. */
+    margin: 0 auto 10px; /* Center the picture and add the bottom margin */
+}
+  
+.winner-name {
+    font-family: 'ClassyFlowersRegular', cursive; /* the backup font is cursive */
+    font-size: 2em; 
+    margin: 0; /* Cancel the margin */
+    color: #044488; /* 设置字体颜色 */
+    /* margin-top: 10px;
+    display: inline-block;  emoji can be added next to the name. */
+}
+  
+
+.emoji {
+    font-size: 1em; /* 调整 emoji 大小 */
+    margin-left: 10px; /* 在名字后面添加一些空间 */
+}  
+.result-game-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px; 
+}
+
+.user-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px; /* Increase the spacing of user results */
+}
+
+.user-avatar {
+    width: 150px; /* Increase the size of the avatar */
+    height: 150px; /* Increase the size of the avatar */
+    border-radius: 50%; /* Round head  */
+    margin-bottom: 10px;
+}
+
+.winner-crown {
+    font-size: 36px; /* Increase the size of the crown symbol */
+    color: gold;
+    position: absolute;
+    margin-top: -36px; /* Adjust the position to the new size */
+}
+
+.vs {
+    font-size: 40px; 
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+/* Increase the font size of user names and data */
+.user-result .MuiTypography-h6 {
+    font-size: 1.5em; 
+}
+
+.user-result .MuiTypography-body2 {
+    font-size: 1.2em; 
+}
+
+.confetti-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.confetti-animation {
+    width: 70%;
+    height: 100%;
+    object-fit: cover; /* Keep the picture proportion and cover the whole container. */
+}

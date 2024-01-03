@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  flex-direction: column; /* Vertical direction */
+  height: 100vh;
+}
+
+.content-below-header {
+  flex: 1; /* Make it occupy all the space except Header. */
+  display: flex; /*Horizontal layout */
+  flex-direction: row; /* 子元素横向排列 */
+  align-items: stretch;
+  width: 100%;
+}
+
+.header {
+  width: 100%; /* Occupying the whole width */
+}
+
+.sidemenu {
+  flex-shrink: 0; /* Make sure that SideMenu will not shrink */
+  width: 200px; /* You can set this width as needed */
+}
+
+.ContentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.landing-container {
+  flex: 1; /* 占满所有可用的垂直空间 */
+  padding: 20px; /* 根据需要设置填充 */
+  flex-direction: column;
+}

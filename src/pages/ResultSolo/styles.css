@@ -1,0 +1,43 @@
+/* ResultSolo 组件特有的样式 */
+.result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin-top: 10px; 减少距离 header 的距离 */
+}
+
+/* 调整标题样式，如 WPM */
+.result-content .MuiTypography-h4 {
+    font-size: 2.5em; /* 调整字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: green; /* 绿色字体 */
+    margin-bottom: 10px; /* 下边距 */
+}
+
+/* 调整次要文本的样式 */
+.result-content .MuiTypography-body1,
+.result-content .MuiTypography-body2 {
+    font-size: 1.2em; /* 调整字体大小 */
+    color: grey; /* 灰色字体 */
+    margin: 5px 0; /* 上下边距 */
+    text-align: center; /* 居中对齐 */
+}
+
+/* 特别强调的文本，如正确单词和错误单词的数量 */
+.result-content .MuiTypography-body2 {
+    font-weight: bold; /* 加粗 */
+}
+
+/* 新添加的图片容器样式 */
+.image-container img {
+    display: block; /* 使得图片在其父元素内居中 */
+    margin: 0 auto; /* 上下为0，左右自动（这将使图片居中） */
+    width: 280%; /* 宽度设置为比文字稍宽一点点，取决于父容器宽度的110% */
+    max-width: 280px; /* 最大宽度限制，可根据实际情况调整 */
+    margin-top: -100px;
+    margin-bottom: -100px; /* 使用负值margin，让图片上移并与下面的文字重叠 */
+    
+}
+
