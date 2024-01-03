@@ -15,7 +15,7 @@ Then, please follow these instruction step by step to run our project:
 
 Then you'll see our web application and could enjoy typing!
 
-## 3 Funtion Implemented
+## 3 Function Implemented
 A shortlist of the user functions we implemented is:
 - login and signup: the gateway for users to access the all user funcitons.
 - home page: the central hub where users can navigate to all other pages of the application.
